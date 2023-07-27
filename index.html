@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("C:/Users/19409/OneDrive/DVProject/titleimg.jpg");
+  min-height: 85%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">DataSet</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">Tableau</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">Vizhub</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-large w3-padding-64"  id="home">
+  <div class="w3-display-middle w3-center">
+    <b><span class="w3-text-black" style="font-size:70px;font-style: italic;">CSCE 5320<br>SCIENTIFIC DATA VISUALIZATION</span></b>
+  </div>
+</header>
+
+
+
+<!-- About Container -->
+<div class="w3-container" style="background-image:url('C:/Users/19409/OneDrive/DVProject/secondimg.jpg')" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THE DATASET</span></h5>
+    <p  style="color: white">This dataset is related to shopping transactions made by customers in various shopping malls in hyderabad city</p>
+    <p style="color: white"> Each row represents a single transaction, and the dataset contains the following major columns:
+    </p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+        <ul style="font-style: italic;">
+            <li>invoice_no: An identifier for each invoice or transaction.
+            </li>
+            <li>customer_id: An identifier for the customer who made the purchase.
+            </li>
+            <li>gender: The gender of the customer (e.g., Male or Female).
+            </li>
+            <li>age: The age of the customer.
+            </li>
+            <li>category: The category of the purchased item (e.g., Clothing, Shoes, Books, Food & Beverage, Cosmetics, Toys, Technology).
+            </li>
+            <li>quantity: The quantity of items purchased in that transaction.
+            </li>
+            <li>price: The price of a single item in the transaction.
+            </li>
+            <li>payment_method: The method of payment used for the purchase (e.g., Credit Card, Debit Card, Cash).
+            </li>
+            <li>shopping_mall: The name or identifier of the shopping mall where the purchase was made.
+            </li>
+            <li>invoice_date: The date of the transaction or purchase.
+            </li>
+          </ul>
+    </div>
+    <p style="color: white">Using this dataset some visualizations are generated in the tableau and vizhub data visualization platforms by analyzing this dataset, retailers and shopping mall operators can gain valuable insights to optimize their inventory, marketing strategies, and overall shopping experiences for their customers. Researchers and data analysts could also use this dataset to practice data analysis and machine learning techniques.</p>
+    <h3 style="color: white">Customer Dataset</h3>
+    <img src="C:\Users\19409\OneDrive\DVProject\dataset.svg" style="width: 700px;height: 700px;" ><br>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" style="background-image: linear-gradient(to left, rgba(255,255,255), rgb(204, 163, 0));" id="menu">
+  <div class="w3-content" style="max-width:800px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Visualizations In Tableau</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Dataset1');" id="myLink">
+        <div class="w3-col s6 tablink">Dataset1</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Dataset2');">
+        <div class="w3-col s6 tablink">Dataset2</div>
+      </a>
+    </div>
+
+    <div id="Dataset1" class="w3-container menu menu w3-padding-48 w3-card">
+      <h5>BarGraph</h5>
+      <img src="C:\Users\19409\OneDrive\DVProject\Bargraph.jpg" style="width:750px;height:300px;"><br>
+      <h5>Stacked Bar graph</h5>
+      <img src="C:\Users\19409\OneDrive\DVProject\StackedBar.jpg" style="width:750px;height:300px;"><br>
+    
+      <h5>Bubble Chart</h5>
+      <img src="C:\Users\19409\OneDrive\DVProject\BubbleChart.jpg" style="width:750px;height:300px;"><br>
+    
+      <h5>Line Chart</h5>
+      <img src="C:\Users\19409\OneDrive\DVProject\LineChart.jpg" style="width:750px;height:300px;"><br>
+    
+    </div>
+
+    <div id="Dataset2" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Categories Bar Graph</h5>
+      <img src="C:\Users\19409\OneDrive\DVProject\Category.jpg" style="width:750px;height:300px;"><br>
+    
+      <h5>Sub Categories Bar Graph</h5>
+      <img src="C:\Users\19409\OneDrive\DVProject\SubCategory.jpg" style="width:750px;height:300px;"><br>
+    
+      <h5>Dashboard-Highlighter</h5>
+      <img src="C:\Users\19409\OneDrive\DVProject\Highlighter.jpg" style="width:550px;height:300px;"><br>
+    
+      <h5>Filter1 Category Greater Than 100</h5>
+      <img src="C:\Users\19409\OneDrive\DVProject\Filter1.jpg" style="width:750px;height:300px;"><br>
+    
+      <h5>Filter2 Category Less Than 100</h5>
+      <img src="C:\Users\19409\OneDrive\DVProject\Filter2.jpg" style="width:750px;height:300px;"><br>
+
+      <h5>Scatter Plot</h5>
+      <img src="C:\Users\19409\OneDrive\DVProject\Scatterplot.jpg" style="width:750px;height:300px;"><br>
+    </div>  
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" style="background-image: linear-gradient(to left, rgba(255,255,255), rgb(0, 82, 204));"  id="where">
+  <div class="w3-content" style="max-width:800px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Visualizations In Vizhub</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openWhere(event, 'Data1');" id="myLink">
+        <div class="w3-col s6 tablink">Dataset1</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openWhere(event, 'Data2');">
+        <div class="w3-col s6 tablink">Dataset2</div>
+      </a>
+    </div>
+
+    <div id="Data1" class="w3-container menu menu w3-padding-48 w3-card">
+      <h5>Scatter Plot</h5>
+      <img src="C:\Users\19409\OneDrive\DVProject\ScatterViz.jpg" style="width:750px;height:300px;"><br>
+      <a href="https://vizhub.com/rikhitakoganti12/95114f2a86164fbf8b70547b286b0abe?edit=files&file=index.html" style="color: white;">Scatter Plot Vizhub Link</a>
+      
+      <h5>Line Chart</h5>
+      <img src="C:\Users\19409\OneDrive\DVProject\LineChartViz.jpg" style="width:750px;height:300px;"><br>
+      <a href="https://vizhub.com/rikhitakoganti12/d47d59836b8a4725b565e9498c441156?edit=files&file=index.html" style="color: white;">Line Chart Vizhub Link</a>
+
+      <h5>Pie Chart</h5>
+      <img src="C:\Users\19409\OneDrive\DVProject\PieChartViz.jpg" style="width:750px;height:300px;"><br>
+      <a href="https://vizhub.com/rikhitakoganti12/48be8eaacf834c9ab071f6415af65ad6?edit=files&file=index.html" style="color: white;">Pie Chart Vizhub Link</a>
+
+      <h5>Bar Chart</h5>
+      <img src="C:\Users\19409\OneDrive\DVProject\BarGraphViz.jpg" style="width:750px;height:300px;"><br>
+      <a href="https://vizhub.com/rikhitakoganti12/3104244f167e4de3a96c32115abfa74f?edit=files&file=index.html" style="color: white;">Bar Chart Vizhub Link</a>
+
+      <h5>Stacked Bar Chart</h5>
+      <img src="C:\Users\19409\OneDrive\DVProject\StackedViz.jpg" style="width:750px;height:300px;"><br>
+      <a href="https://vizhub.com/rikhitakoganti12/0eaa7c4822214cada6f8a1e8f54c7f36?edit=files&file=index.html" style="color: white;">Stacked Bar Chart  Vizhub Link</a>
+
+      <h5>Area Chart</h5>
+      <img src="C:\Users\19409\OneDrive\DVProject\AreaChartViz.jpg" style="width:750px;height:300px;"><br>
+      <a href="https://vizhub.com/rikhitakoganti12/446bade0e70d47c48b50b609f8953f02?edit=files&file=index.html" style="color: white;">Area Chart Vizhub Link</a>
+
+
+    </div>
+
+    <div id="Data2" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Tree Graph</h5>
+      <img src="C:\Users\19409\OneDrive\DVProject\TreeGraphViz.jpg" style="width:750px;height:300px;"><br>
+      <a href="https://vizhub.com/rikhitakoganti12/73e37931bc3443cbbefdc9c08a9bb0bc?edit=files&file=index.html" style="color: white;">Tree Graph Vizhub Link</a>
+
+    </div>  
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+
+function openWhere(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("where");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
